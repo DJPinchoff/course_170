@@ -3,7 +3,7 @@ require "sinatra/reloader"
 require "tilt/erubis"
 
 get "/" do
-  @title = "Your Title Goes Here"
+  @title = "The Adventures of Sherlock Holmes"
   @contents = File.readlines('data/toc.txt')
   erb :home
 end
