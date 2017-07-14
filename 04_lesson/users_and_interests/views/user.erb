@@ -1,0 +1,10 @@
+<h2><%= @name.capitalize %>'s Page</h2>
+<p>Email: <%= @database[@name.to_sym][:email] %></p>
+<p>Interests: <%= @database[@name.to_sym][:interests].join(", ") %></p>
+<p></p>
+<h3>Visit Another User's Page</h3>
+<ul>
+<% other_users(@name.to_sym).each do |key| %>
+  <li><a href="/users/<%= key %>"><%= key.capitalize %></a></li>
+<% end %>
+</ul>
