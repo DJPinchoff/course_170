@@ -1,0 +1,14 @@
+Gemfile
+  -Considered server side because it is the configuration file for bundler which handles installing all of the dependencies required on the server for the application to run
+
+Ruby Files ('.rb')
+  -Considered to be server side because this is the code that allows the application to run on the server. It renders the html which is sent to the client.. but not the ruby file!
+
+  Stylesheets
+  -Considered to be client side because this file contains the necessary information to render the html according to specific rules on the client's browser
+
+  Javascript Files
+  -Considered to be client side since the code within these files is evaluated by JavaScript interpreter within the web browser to add behavior to a web page.
+
+  View Template
+  -Considered to be server side since it is a layout upon which the html response is sent from the server to the client.
