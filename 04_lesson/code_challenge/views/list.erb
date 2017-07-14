@@ -1,0 +1,10 @@
+<% @files.each do |file| %>
+  <% file = file.split("/").last %>
+  <a href="<%= file %>"> <%= file %> </p></a>
+<% end %>
+
+<% if params[:sort] == "descending" %>
+  <a href="/"><p> Sort ascending </p></a>
+<% else %>
+  <a href="/?sort=descending"><p> Sort descending</p></a>
+<% end %>
