@@ -8,5 +8,7 @@ get "/" do
 end
 
 get "/users" do
+  @database = Psych.load_file("users.yml")
+  
   erb :users
 end
